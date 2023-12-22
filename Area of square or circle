@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    char shape;
+int side;
+float area,radius;
+ printf("Enter the shape: ");
+ scanf("%c",&shape);
+ if (shape=='S')
+ {
+ printf("you wanted to find the area of a Square\n");
+ printf("Enter the side of the Square:\n");
+ scanf("%d",&side);
+ area = side*side;
+ printf("area of the square is %f",area);
+ }
+ else if (shape=='C')
+ {
+ printf("you wanted to find the area of a Circle\n");
+ printf("Enter the radius of the circle:");
+ scanf("%f",&radius);
+ area = 3.14*radius*radius;
+ printf("area of the square is %f",area);
+ }
+ else{
+     printf("enter a valid shape either S or C");
+ }
+ return 1;
+}
