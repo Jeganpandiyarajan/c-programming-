@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{ int i;
+   int len;
+   int frequency;
+  printf("Enter the length of the array:");
+  scanf("%d",&len);
+   int arr[len];
+ printf("enter %d elements:\n",len);
+ for ( int i=0;i<len;i++)
+ {
+ printf("enter %d st element:\n",i+1);
+ scanf("%d",&arr[i]);
+}
+printf("Elements and their frequencies:\n");
+    
+    { for (int i=0;i<len;i++)
+    {
+     frequency=1;
+      for (int j=i+1;j<len;j++)
+      { if (arr[i]==arr[j])
+      { frequency++;
+      arr[j]=0;
+      }
+      }
+    
+    if (frequency>1)
+    {printf("element: %d -->frequency %d ",arr[i],frequency);
+    } 
+    }
+return 0;
+}
+}
